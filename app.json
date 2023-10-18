@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "my-app-ts",
-    "slug": "my-app-ts",
+    "name": "little-shop-reader-app",
+    "slug": "little-shop-reader-app",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -25,6 +25,10 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "plugins": [
+      "expo-camera",
+      "expo-barcode-scanner"
+    ]
   }
 }
