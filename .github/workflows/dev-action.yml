@@ -1,0 +1,18 @@
+name: App Dev Workflow
+on:
+  push:
+    branches:
+      - main
+      - dvelop
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Say Hello
+        run: echo "Hello World"
+      - name: Install dependencies
+        run: npm install
+      - name: Build app
+        run: npm run build
+      - name: run tests
+        run: npm run test
